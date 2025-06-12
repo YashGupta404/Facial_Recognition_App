@@ -66,6 +66,43 @@ class face_recognition:
                          font=("times new roman",12 , "bold"))
         face_btn_txt.place(x=450, y=330,width=180, height=30)
         
+          # training button
+        
+        train_img = Image.open(r"C:\images_face_recog\data-warehouse.png") 
+        train_img = train_img.resize((180, 180), Image.LANCZOS)
+        self.phototrain_img= ImageTk.PhotoImage(train_img) 
+        train_btn = Button(self.root, image=self.phototrain_img, cursor = "hand2",)
+        train_btn.place(x=950, y=150,width=180, height=180)
+        
+        train_btn_txt = Button(self.root, text="Train Data", cursor = "hand2",
+                         font=("times new roman",12 , "bold"))
+        train_btn_txt.place(x=950, y=330,width=180, height=30)
+        
+        
+        #Team
+        Team_img = Image.open(r"C:\images_face_recog\united.png") 
+        Team_img = Team_img.resize((180, 180), Image.LANCZOS)
+        self.photoTeam_img= ImageTk.PhotoImage(Team_img) 
+        Team_btn = Button(self.root, image=self.photoTeam_img, cursor = "hand2",
+                        )
+        Team_btn.place(x=700, y=420,width=180, height=180)
+        
+        Team_btn_txt = Button(self.root, text="Team", cursor = "hand2",
+                         font=("times new roman",12 , "bold"))
+        Team_btn_txt.place(x=700, y=600,width=180, height=30)
+        
+        #Help Desk
+        help_img = Image.open(r"C:\images_face_recog\customer-service.png") 
+        help_img = help_img.resize((180, 180), Image.LANCZOS)
+        self.photohelp_img= ImageTk.PhotoImage(help_img) 
+        help_btn = Button(self.root, image=self.photohelp_img, cursor = "hand2",
+                        )
+        help_btn.place(x=450, y=420,width=180, height=180)
+        
+        help_btn_txt = Button(self.root, text="Help Desk", cursor = "hand2",
+                         font=("times new roman",12 , "bold"))
+        help_btn_txt.place(x=450, y=600,width=180, height=30)
+        
 
 if __name__ == "__main__":
     # Create the main window
