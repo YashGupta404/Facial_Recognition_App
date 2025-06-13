@@ -9,19 +9,23 @@ class User:
         self.root.title("Face Recognition System") 
         self.root.geometry("1530x790+0+0") 
         
-         #background image
+        #background image
         bg_img = Image.open(r"C:\images_face_recog\background.jpg") 
         bg_img = bg_img.resize((1530, 790), Image.LANCZOS)
         self.photobg_img = ImageTk.PhotoImage(bg_img) 
         self.lbl_bg = Label(self.root, image= self.photobg_img)
         self.lbl_bg.place(x=0, y=0, width=1530, height=790)
         
-         #logo image
+        #logo image
         image = Image.open(r"C:\images_face_recog\background.jpg")
         image = image.resize((100, 100), Image.LANCZOS)
         self.photoimage = ImageTk.PhotoImage(image) 
         self.lbl_image = Label(self.root, image= self.photoimage)
         self.lbl_image.place(x=1420, y=10, width=100, height=100)
+
+        #title
+        title_lbl=Label(self.lbl_bg, text="STUDENT MANAGEMENT SYSTEM", font=("times new roman", 35, "bold"), bg="white", fg="darkgreen")
+        title_lbl.place(x=0, y=0, width=1530, height=45)
 
         #frame
         main_frame=Frame(self.lbl_bg, bd=2, bg="white")
@@ -173,7 +177,7 @@ class User:
         img_right=Image.open(r"C:\images_face_recog\background.jpg")
         img_right=img_right.resize((720,130), Image.LANCZOS)
         self.photoimg_right=ImageTk. PhotoImage(img_right)
-        f_lbl=Label(Left_frame,image=self.photoimg_right)
+        f_lbl=Label(Right_frame,image=self.photoimg_right)
         f_lbl.place( x = 5 ,y=0,width=720, height=130)
 
         #search system
