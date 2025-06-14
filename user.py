@@ -10,14 +10,14 @@ class User:
         self.root.geometry("1530x790+0+0") 
         
         #background image
-        bg_img = Image.open(r"C:\images_face_recog\background.jpg") 
+        bg_img = Image.open(r"Facial_Recognition_App\images_face_recog\background.jpg") 
         bg_img = bg_img.resize((1530, 790), Image.LANCZOS)
         self.photobg_img = ImageTk.PhotoImage(bg_img) 
         self.lbl_bg = Label(self.root, image= self.photobg_img)
         self.lbl_bg.place(x=0, y=0, width=1530, height=790)
         
         #logo image
-        image = Image.open(r"C:\images_face_recog\background.jpg")
+        image = Image.open(r"Facial_Recognition_App\images_face_recog\background.jpg")
         image = image.resize((100, 100), Image.LANCZOS)
         self.photoimage = ImageTk.PhotoImage(image) 
         self.lbl_image = Label(self.root, image= self.photoimage)
@@ -34,7 +34,7 @@ class User:
         #left label frame
         Left_frame=LabelFrame(main_frame, bd=2, bg="white", relief=RIDGE, text="Student Details", font=("times new roman", 12, "bold"))
         Left_frame.place(x=10, y = 10, width=730, height=580)
-        img_left=Image.open(r"C:\images_face_recog\background.jpg")
+        img_left=Image.open(r"Facial_Recognition_App\images_face_recog\background.jpg")
         img_left=img_left.resize((720,130), Image.LANCZOS)
         self.photoimg_left=ImageTk. PhotoImage(img_left)
         f_lbl=Label(Left_frame,image=self.photoimg_left)
@@ -174,7 +174,7 @@ class User:
         #right label frame
         Right_frame=LabelFrame(main_frame, bd=2, bg="white", relief=RIDGE, text="Student Details", font=("times new roman", 12, "bold"))
         Right_frame.place(x=750, y = 10, width=720, height=580)
-        img_right=Image.open(r"C:\images_face_recog\background.jpg")
+        img_right=Image.open(r"Facial_Recognition_App\images_face_recog\background.jpg")
         img_right=img_right.resize((720,130), Image.LANCZOS)
         self.photoimg_right=ImageTk. PhotoImage(img_right)
         f_lbl=Label(Right_frame,image=self.photoimg_right)

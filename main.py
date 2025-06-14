@@ -11,14 +11,14 @@ class face_recognition:
        
        
        #background image
-        bg_img = Image.open(r"C:\images_face_recog\background.jpg") 
+        bg_img = Image.open(r"Facial_Recognition_App\images_face_recog\background.jpg") 
         bg_img = bg_img.resize((1530, 790), Image.LANCZOS)
         self.photobg_img = ImageTk.PhotoImage(bg_img) 
         self.lbl_bg = Label(self.root, image= self.photobg_img)
         self.lbl_bg.place(x=0, y=0, width=1530, height=790)
         
         #logo image
-        image = Image.open(r"C:\images_face_recog\face-recognition.png") # Opening the image file from the specified path
+        image = Image.open(r"Facial_Recognition_App\images_face_recog\face-recognition.png") # Opening the image file from the specified path
         # Resizing the image to fit the window and ANTIALIAS is used to convert the image to a lower resolution
         image = image.resize((100, 100), Image.LANCZOS)
         self.photoimage = ImageTk.PhotoImage(image) # Converting the image to PhotoImage format for tkinter
@@ -31,7 +31,7 @@ class face_recognition:
         title_lbl.place(x=515, y=50, width=500, height=45)
         #user details
         
-        user_img = Image.open(r"C:\images_face_recog\list.png") 
+        user_img = Image.open(r"Facial_Recognition_App\images_face_recog\list.png") 
         user_img = user_img.resize((180, 180), Image.LANCZOS)
         self.photouser_img= ImageTk.PhotoImage(user_img) 
         user_btn = Button(self.root, image=self.photouser_img, cursor = "hand2",)
@@ -43,7 +43,7 @@ class face_recognition:
         
         
         #Gender Recognition button
-        Gen_img = Image.open(r"C:\images_face_recog\atoms.png") 
+        Gen_img = Image.open(r"Facial_Recognition_App\images_face_recog\atoms.png") 
         Gen_img = Gen_img.resize((180, 180), Image.LANCZOS)
         self.photoGen_img= ImageTk.PhotoImage(Gen_img) 
         Gen_btn = Button(self.root, image=self.photoGen_img, cursor = "hand2",
@@ -55,7 +55,7 @@ class face_recognition:
         Gen_btn_txt.place(x=700, y=330,width=180, height=30)
         
         #face detection button
-        face_img = Image.open(r"C:\images_face_recog\face-detection (1).png") 
+        face_img = Image.open(r"Facial_Recognition_App\images_face_recog\face-detection (1).png") 
         face_img = face_img.resize((180, 180), Image.LANCZOS)
         self.photoface_img= ImageTk.PhotoImage(face_img) 
         face_btn = Button(self.root, image=self.photoface_img, cursor = "hand2",
@@ -68,7 +68,7 @@ class face_recognition:
         
           # training button
         
-        train_img = Image.open(r"C:\images_face_recog\data-warehouse.png") 
+        train_img = Image.open(r"Facial_Recognition_App\images_face_recog\data-warehouse.png") 
         train_img = train_img.resize((180, 180), Image.LANCZOS)
         self.phototrain_img= ImageTk.PhotoImage(train_img) 
         train_btn = Button(self.root, image=self.phototrain_img, cursor = "hand2",)
@@ -80,7 +80,7 @@ class face_recognition:
         
         
         #Team
-        Team_img = Image.open(r"C:\images_face_recog\united.png") 
+        Team_img = Image.open(r"Facial_Recognition_App\images_face_recog\united.png") 
         Team_img = Team_img.resize((180, 180), Image.LANCZOS)
         self.photoTeam_img= ImageTk.PhotoImage(Team_img) 
         Team_btn = Button(self.root, image=self.photoTeam_img, cursor = "hand2",
@@ -92,7 +92,7 @@ class face_recognition:
         Team_btn_txt.place(x=700, y=600,width=180, height=30)
         
         #Help Desk
-        help_img = Image.open(r"C:\images_face_recog\customer-service.png") 
+        help_img = Image.open(r"Facial_Recognition_App\images_face_recog\customer-service.png") 
         help_img = help_img.resize((180, 180), Image.LANCZOS)
         self.photohelp_img= ImageTk.PhotoImage(help_img) 
         help_btn = Button(self.root, image=self.photohelp_img, cursor = "hand2",
